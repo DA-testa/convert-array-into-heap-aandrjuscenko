@@ -1,4 +1,6 @@
 # python3
+import math
+
 def build_heap(data):
     swaps = []
     # TODO: Creat heap and heap sort
@@ -56,8 +58,8 @@ def main():
 
     # output all swaps
     print(len(swaps))
-    for i, j in swaps:
-        print(i, j)
+    for i in swaps:
+        print(i[0],i[1])
 
 
 if __name__ == "__main__":
