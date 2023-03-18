@@ -28,6 +28,7 @@ def main():
     # first two tests are from keyboard, third test is from a file
     veids = input()
     data=[]
+    n=0
     if veids =="I" :
        n = int(input())
        data = list(map(int, input().split(" ")))
