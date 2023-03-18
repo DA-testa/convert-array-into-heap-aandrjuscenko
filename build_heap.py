@@ -33,14 +33,14 @@ def main():
     n=0
     if veids =="I" :
        n = int(input())
-       data = list(map(int, input().split(" ")))
+       data = list(map(int, input().split()))
     elif veids =="F":
         file_Name = input()
         if "a" in file_Name:
             return
         with open("./tests/" + file_Name, "r") as op:
              n = int(op.readline())
-             data = list(map(int, op.readline().split(" ")))
+             data = list(map(int, op.readline().split()))
     
     # input from keyboard
 
@@ -59,7 +59,7 @@ def main():
     # output all swaps
     print(len(swaps))
     for i in swaps:
-        print((i[0],i[1]),end=" ")
+        print(i[0],i[1])
 
 
 if __name__ == "__main__":
