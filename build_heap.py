@@ -35,9 +35,9 @@ def main():
        data = list(map(int, input().split()))
     elif veids =="F":
         file_Name = input()
-        if "a" in file_Name:
+        if "a" not in file_Name:
             return
-        with open("./tests/" + file_Name, "r") as op:
+        with open("tests/" + file_Name, "r") as op:
              n = int(op.readline())
              data = list(map(int, op.readline().split()))
     
