@@ -27,6 +27,7 @@ def main():
     
     # TODO : add input and corresponding checks
     # first two tests are from keyboard, third test is from a file
+    n=4
     veids = input()
     data=[]
     if veids =="I"or veids=="i":
