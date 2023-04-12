@@ -29,11 +29,11 @@ def main():
     # first two tests are from keyboard, third test is from a file
     veids = input()
     data=[]
-    n=0
-    if veids =="I" :
+
+    if veids =="I"or veids=="i":
        n = int(input())
        data = list(map(int, input().split()))
-    elif veids =="F":
+    elif veids =="F" or veids=="f":
         file_Name = input()
         if "a" not in file_Name:
             return
