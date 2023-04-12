@@ -36,11 +36,10 @@ def main():
     elif veids =="F" or veids=="f":
         file_Name = input()
         if "a" not in file_Name:
-            return
-        with open("tests/" + file_Name, "r") as op:
-             n = int(op.readline())
-             data = list(map(int, op.readline().split()))
-    
+             with open("tests/" + file_Name, "r") as op:
+                n = int(op.readline())
+                data = list(map(int, op.readline().split()))
+        
     # input from keyboard
 
 
